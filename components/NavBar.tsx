@@ -1,82 +1,118 @@
 "use client";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import ChartIcon from "./ChartIcon";
 
 export default function NavBar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-r from-[#1A202C] to-[#2D3748]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-        <Link className="flex items-center gap-2" href="#">
-          <ChartIcon className="h-8 w-8 text-white" />
-          <span className="text-2xl font-bold text-white lg:text-xl">
-            i-Group
-          </span>
-        </Link>
-        <nav className="hidden md:block">
-          <ul className="flex items-center gap-6 text-base font-medium">
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                Our Focus
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                Method
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="relative text-white after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-bottom-left after:scale-x-0 after:bg-white after:transition-transform hover:after:scale-x-100 hover:text-[#4A5568] hover:underline"
-                href="#"
-              >
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <nav className="w-full bg-gradient-to-r from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="flex items-center text-white dark:text-gray-200 font-bold">
+          <BarChartIcon className="h-6 w-6 mr-2" />
+          i-Group of Companies
+        </div>
+        <div className="hidden md:flex space-x-6 items-center">
+          <a
+            className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
+            href="#"
+          >
+            Home
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
+            href="#"
+          >
+            About Us
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
+            href="#"
+          >
+            Our Focus
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
+            href="#"
+          >
+            Method
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
+            href="#"
+          >
+            Portfolio
+          </a>
+          <Button
+            className="bg-violet-600 text-white hover:bg-violet-700 border-violet-600 px-4 py-2 rounded-md transition-colors duration-300"
+            variant="outline"
+          >
+            Contact Us
+          </Button>
+        </div>
         <div className="md:hidden">
-          <Button size="icon" variant="ghost">
-            <MenuIcon className="h-8 w-8 text-white" />
-            <span className="sr-only">Open menu</span>
+          <button
+            aria-controls="mobile-menu"
+            className="text-white dark:text-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white transition-colors duration-300"
+            type="button"
+          >
+            <svg
+              className="h-6 w-6 fill-current"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div className="md:hidden " id="mobile-menu">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+            href="#"
+          >
+            Home
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+            href="#"
+          >
+            About Us
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+            href="#"
+          >
+            Our Focus
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+            href="#"
+          >
+            Method
+          </a>
+          <a
+            className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+            href="#"
+          >
+            Portfolio
+          </a>
+          <Button
+            className="bg-violet-600 text-white hover:bg-violet-700 border-violet-600 px-3 py-2 rounded-md text-base font-medium w-full transition-colors duration-300"
+            variant="outline"
+          >
+            Contact Us
           </Button>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
 
-function BuildingIcon(props: React.SVGProps<SVGSVGElement>) {
+function BarChartIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -90,38 +126,9 @@ function BuildingIcon(props: React.SVGProps<SVGSVGElement>) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
-      <path d="M9 22v-4h6v4" />
-      <path d="M8 6h.01" />
-      <path d="M16 6h.01" />
-      <path d="M12 6h.01" />
-      <path d="M12 10h.01" />
-      <path d="M12 14h.01" />
-      <path d="M16 10h.01" />
-      <path d="M16 14h.01" />
-      <path d="M8 10h.01" />
-      <path d="M8 14h.01" />
-    </svg>
-  );
-}
-
-function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
+      <line x1="12" x2="12" y1="20" y2="10" />
+      <line x1="18" x2="18" y1="20" y2="4" />
+      <line x1="6" x2="6" y1="20" y2="16" />
     </svg>
   );
 }
