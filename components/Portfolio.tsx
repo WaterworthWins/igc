@@ -20,7 +20,10 @@ export default function Portfolio() {
                 </h1>
               </div>
               <blockquote className="mt-3 text-base text-gray-200 sm:mt-4 sm:text-lg sm:max-w-lg md:mt-4 md:text-xl lg:max-w-none">
-                <p>i-Group of Companies curates a portfolio of diversified Purpose Based Opportunities (PBO):</p>
+                <p>
+                  i-Group of Companies curates a portfolio of diversified
+                  Purpose Based Opportunities (PBO):
+                </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
                   <div className="flex items-center gap-2 p-3 rounded-lg bg-white/10 backdrop-blur-sm">
                     <ActivityIcon className="w-5 h-5 text-white" />
@@ -49,10 +52,10 @@ export default function Portfolio() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-function ActivityIcon(props: React.SVGProps<SVGSVGElement> ) {
+function ActivityIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -68,11 +71,10 @@ function ActivityIcon(props: React.SVGProps<SVGSVGElement> ) {
     >
       <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
     </svg>
-  )
+  );
 }
 
-
-function BriefcaseIcon(props: React.SVGProps<SVGSVGElement> ) {
+function BriefcaseIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -89,11 +91,10 @@ function BriefcaseIcon(props: React.SVGProps<SVGSVGElement> ) {
       <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
       <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
     </svg>
-  )
+  );
 }
 
-
-function HardHatIcon(props: React.SVGProps<SVGSVGElement> ) {
+function HardHatIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -112,11 +113,10 @@ function HardHatIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="M4 15v-3a6 6 0 0 1 6-6h0" />
       <path d="M14 6h0a6 6 0 0 1 6 6v3" />
     </svg>
-  )
+  );
 }
 
-
-function MedalIcon(props: React.SVGProps<SVGSVGElement> ) {
+function MedalIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -137,11 +137,10 @@ function MedalIcon(props: React.SVGProps<SVGSVGElement> ) {
       <circle cx="12" cy="17" r="5" />
       <path d="M12 18v-2h-.5" />
     </svg>
-  )
+  );
 }
 
-
-function RocketIcon(props: React.SVGProps<SVGSVGElement> ) {
+function RocketIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -160,11 +159,10 @@ function RocketIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
       <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
     </svg>
-  )
+  );
 }
 
-
-function UserIcon(props: React.SVGProps<SVGSVGElement> ) {
+function UserIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -181,5 +179,5 @@ function UserIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
       <circle cx="12" cy="7" r="4" />
     </svg>
-  )
+  );
 }

@@ -15,8 +15,9 @@ export default function SectionThree() {
               <blockquote className="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 <p>A Purpose Based Opportunity is different...</p>
                 <p>
-                  Focusing equal efforts on a commercially viable and profitable business opportunity while
-                  simultaneously contributing to society and making a positive difference in the world.
+                  Focusing equal efforts on a commercially viable and profitable
+                  business opportunity while simultaneously contributing to
+                  society and making a positive difference in the world.
                 </p>
               </blockquote>
               <div className="mt-4">
@@ -37,10 +38,10 @@ export default function SectionThree() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-function FocusIcon(props: React.SVGProps<SVGSVGElement> ) {
+function FocusIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -60,6 +61,5 @@ function FocusIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
       <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
     </svg>
-  )
+  );
 }
-

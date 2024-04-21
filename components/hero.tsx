@@ -1,6 +1,6 @@
 "use client";
-import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
-import Link from "next/link"
+import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -20,8 +20,10 @@ export default function Hero() {
                   </Avatar>
                   <div className="ml-4">
                     <p>
-                    &#34;At i-Group, we are driven by a purpose to create a better world through sustainable and ethical
-                      business practices that empower communities and promote social and environmental responsibility.&#34;
+                      &#34;At i-Group, we are driven by a purpose to create a
+                      better world through sustainable and ethical business
+                      practices that empower communities and promote social and
+                      environmental responsibility.&#34;
                     </p>
                     <footer className="mt-2 text-sm">
                       <cite>- Daniel Lewis | i-Group Founder</cite>
@@ -57,10 +59,10 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-function HeartHandshakeIcon(props: React.SVGProps<SVGSVGElement> ) {
+function HeartHandshakeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -79,9 +81,8 @@ function HeartHandshakeIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="m18 15-2-2" />
       <path d="m15 18-2-2" />
     </svg>
-  )
+  );
 }
-
 
 function LeafIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -100,9 +101,8 @@ function LeafIcon(props: React.SVGProps<SVGSVGElement>) {
       <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
       <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
     </svg>
-  )
+  );
 }
-
 
 function TreesIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -123,6 +123,5 @@ function TreesIcon(props: React.SVGProps<SVGSVGElement>) {
       <path d="M13 19v3" />
       <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" />
     </svg>
-  )
+  );
 }
-

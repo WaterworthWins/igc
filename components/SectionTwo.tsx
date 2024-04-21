@@ -9,13 +9,16 @@ export default function SectionTwo() {
               <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                 <span className="block">We</span>
                 <span className="block">Are</span>
-                <span className="block">Business Opportunity Architects and Developers</span>
+                <span className="block">
+                  Business Opportunity Architects and Developers
+                </span>
               </h1>
               <blockquote className="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 <p>A Purpose Based Opportunity is different…</p>
                 <p>
-                  Focusing equal efforts on a commercially viable and profitable business opportunity while
-                  simultaneously contributing to society and making a positive difference in the world.
+                  Focusing equal efforts on a commercially viable and profitable
+                  business opportunity while simultaneously contributing to
+                  society and making a positive difference in the world.
                 </p>
               </blockquote>
             </div>
@@ -31,10 +34,10 @@ export default function SectionTwo() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-function LightbulbIcon(props: React.SVGProps<SVGSVGElement>  ) {
+function LightbulbIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -52,6 +55,5 @@ function LightbulbIcon(props: React.SVGProps<SVGSVGElement>  ) {
       <path d="M9 18h6" />
       <path d="M10 22h4" />
     </svg>
-  )
+  );
 }
-

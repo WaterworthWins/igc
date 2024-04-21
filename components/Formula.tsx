@@ -12,9 +12,15 @@ export default function Formula() {
                 </h1>
               </div>
               <blockquote className="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                <p>Balancing business for profit with an authentic business opportunity of meaning and purpose.</p>
+                <p>
+                  Balancing business for profit with an authentic business
+                  opportunity of meaning and purpose.
+                </p>
                 <p>Profit and purpose are not in conflict.</p>
-                <p>The closer and tighter we focus on purpose, the more profit grows.</p>
+                <p>
+                  The closer and tighter we focus on purpose, the more profit
+                  grows.
+                </p>
               </blockquote>
             </div>
             <div className="flex items-center justify-center">
@@ -29,10 +35,10 @@ export default function Formula() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-function ScaleIcon(props: React.SVGProps<SVGSVGElement> ) {
+function ScaleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -52,6 +58,5 @@ function ScaleIcon(props: React.SVGProps<SVGSVGElement> ) {
       <path d="M12 3v18" />
       <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
     </svg>
-  )
+  );
 }
-
