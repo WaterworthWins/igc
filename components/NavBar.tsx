@@ -1,18 +1,19 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import GearIcon from "./GearIcon";
 
 export default function NavBar() {
   return (
     <nav className="w-full bg-gradient-to-r from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center text-white dark:text-gray-200 font-bold">
-          <BarChartIcon className="h-6 w-6 mr-2" />
+          <GearIcon className="h-16 w-16 mr-2" />
           i-Group of Companies
         </div>
         <div className="hidden md:flex space-x-6 items-center">
           <a
             className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
-            href="#"
+            href="/"
           >
             Home
           </a>

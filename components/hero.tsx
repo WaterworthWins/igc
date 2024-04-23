@@ -5,7 +5,8 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="dark">
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900" />
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800 pt-20">
         <div className="max-w-[1618px] px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
@@ -20,10 +21,10 @@ export default function Hero() {
                   </Avatar>
                   <div className="ml-4">
                     <p>
-                      &#34;At i-Group, we are driven by a purpose to create a
-                      better world through sustainable and ethical business
-                      practices that empower communities and promote social and
-                      environmental responsibility.&#34;
+                      &quot;At i-Group we provide business enterprise
+                      development in tranformative ways that change the world
+                      through a balanced approach of Business-Enterprise /
+                      Social-Enterprise.&quot;
                     </p>
                     <footer className="mt-2 text-sm">
                       <cite>- Daniel Lewis | i-Group Founder</cite>
@@ -33,7 +34,10 @@ export default function Hero() {
               </blockquote>
               <div className="mt-4 text-lg text-gray-200 flex items-center">
                 <LeafIcon className="w-6 h-6 mr-2 text-green-400" />
-                <p>sustainability | ethics | empowerment</p>
+                <p>imagination | innovation | integrity</p>
+              </div>
+              <div className="text-lg text-gray-200 flex items-center">
+                <p>Business with Meaning and Purpose</p>
               </div>
               <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
