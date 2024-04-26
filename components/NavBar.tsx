@@ -19,25 +19,25 @@ export default function NavBar() {
           </a>
           <a
             className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
-            href="#"
+            href="about"
           >
             About Us
           </a>
           <a
             className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
-            href="#"
+            href="focus"
           >
             Our Focus
           </a>
           <a
             className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
-            href="#"
+            href="method"
           >
             Method
           </a>
           <a
             className="text-white dark:text-gray-200 hover:underline px-3 py-2 rounded-md transition-colors duration-300"
-            href="#"
+            href="portfolio"
           >
             Portfolio
           </a>
@@ -73,31 +73,31 @@ export default function NavBar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            href="#"
+            href="/"
           >
             Home
           </a>
           <a
             className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            href="#"
+            href="about"
           >
             About Us
           </a>
           <a
             className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            href="#"
+            href="focus"
           >
             Our Focus
           </a>
           <a
             className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            href="#"
+            href="method"
           >
             Method
           </a>
           <a
             className="text-white dark:text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            href="#"
+            href="portfolio"
           >
             Portfolio
           </a>

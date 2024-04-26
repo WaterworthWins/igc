@@ -15,22 +15,22 @@ export default function Home() {
       <section id="home">
         <Hero />
       </section>
-      <section id="about" style={{ marginTop: "26px" }}>
+      <section id="about">
         <SectionTwo />
       </section>
-      <section id="focus" style={{ marginTop: "26px" }}>
+      <section id="focus">
         <SectionThree />
       </section>
-      <section id="method" style={{ marginTop: "26px" }}>
+      <section id="method">
         <Formula />
       </section>
-      <section id="method" style={{ marginTop: "26px" }}>
+      <section id="method">
         <Method />
       </section>
-      <section id="portfolio" style={{ marginTop: "26px" }}>
+      <section id="portfolio">
         <Portfolio />
       </section>
-      <section id="contact" style={{ marginTop: "26px" }}>
+      <section id="contact">
         <ContactForm />
       </section>
     </div>
