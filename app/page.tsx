@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="page-container">
       {/* Each section is given an id that matches the href in the navbar */}
-      <section id="home">
+      <section id="/">
         <Hero />
       </section>
       <section id="about">
@@ -21,7 +21,7 @@ export default function Home() {
       <section id="focus">
         <SectionThree />
       </section>
-      <section id="method">
+      <section id="formula">
         <Formula />
       </section>
       <section id="method">
