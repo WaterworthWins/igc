@@ -1,12 +1,13 @@
 "use client";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import Link from "next/link";
+import DovesIcon from "./DovesIcon";
 
 export default function Hero() {
   return (
     <div className="dark">
       <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900" />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800 pt-20">
+      <div className="flex flex-col items-center justify-center  bg-gradient-to-br from-indigo-500 to-pink-500 dark:from-gray-900 dark:to-gray-800 pt-20">
         <div className="max-w-[1618px] px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
@@ -15,10 +16,6 @@ export default function Hero() {
               </h1>
               <blockquote className="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 <div className="flex items-center">
-                  <Avatar>
-                    <AvatarImage alt="Daniel Lewis" src="/daniel-lewis.jpg" />
-                    <AvatarFallback>DL</AvatarFallback>
-                  </Avatar>
                   <div className="ml-4">
                     <p>
                       &quot;At i-Group we provide business enterprise
